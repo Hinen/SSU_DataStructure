@@ -12,5 +12,7 @@ public:
 	virtual void Main() override;
 
 private:
-
+	void TimeComplexityTest1(int n);
+	void TimeComplexityTest2(int n);
+	void TimeComplexityTest3(int n);
 };
