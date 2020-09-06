@@ -1,5 +1,13 @@
 #include "stdafx.h"
+#include "Manager.h"
 
-int main() {
-	return 0;
+int main()
+{
+	auto manager = new Week1Manager();
+
+	manager->Main();
+
+	delete manager;
+
+	return 1;
 }
