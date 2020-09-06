@@ -18,6 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{82EDF12E-A391-45A4-8DD9-CE4B7F425EB4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,8 +147,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
