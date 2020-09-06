@@ -21,7 +21,7 @@ void Week1Manager::Main()
 
 void Week1Manager::TimeComplexityTest1(int n)
 {
-	cout << "\nStart Time Complexity Test3" << endl;
+	cout << "\nStart Time Complexity Test1" << endl;
 	cout << "n : " << n << endl;
 	int calcCount = 0;
 
@@ -29,12 +29,13 @@ void Week1Manager::TimeComplexityTest1(int n)
 	calcCount += 2; // µ¡¼À, ´ëÀÔ ÃÑ 2¹ø
 
 	cout << "Result Sum : " << sum << endl;
-	cout << "CalcCount : " << calcCount << endl;
+	cout << "Calc Count : " << calcCount << endl;
+	cout << "Expected Count : " << 2 << endl;
 }
 
 void Week1Manager::TimeComplexityTest2(int n)
 {
-	cout << "\nStart Time Complexity Test3" << endl;
+	cout << "\nStart Time Complexity Test2" << endl;
 	cout << "n : " << n << endl;
 	int calcCount = 0;
 
@@ -48,7 +49,8 @@ void Week1Manager::TimeComplexityTest2(int n)
 	}
 
 	cout << "Result Sum : " << sum << endl;
-	cout << "CalcCount : " << calcCount << endl;
+	cout << "Calc Count : " << calcCount << endl;
+	cout << "Expected Count : " << 2 * n + 1 << endl;
 }
 
 void Week1Manager::TimeComplexityTest3(int n)
@@ -70,5 +72,6 @@ void Week1Manager::TimeComplexityTest3(int n)
 	}
 
 	cout << "Result Sum : " << sum << endl;
-	cout << "CalcCount : " << calcCount << endl;
+	cout << "Calc Count : " << calcCount << endl;
+	cout << "Expected Count : " << 2 * (n * n) + 1 << endl;
 }
