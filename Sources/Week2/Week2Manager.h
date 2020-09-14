@@ -2,6 +2,7 @@
 
 #include "../WeekManagerBase.h"
 #include "Polynomial.h"
+#include "SparsePoly.h"
 
 class Week2Manager : public WeekManagerBase
 {
@@ -14,4 +15,5 @@ public:
 
 private:
 	void PolynomialTest1();
+	void SparsePolyTest1();
 };

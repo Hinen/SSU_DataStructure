@@ -14,7 +14,8 @@ void Week2Manager::Main()
 {
 	WeekManagerBase::Main();
 
-	PolynomialTest1();
+	//PolynomialTest1();
+	SparsePolyTest1();
 }
 
 void Week2Manager::PolynomialTest1()
@@ -42,4 +43,9 @@ void Week2Manager::PolynomialTest1()
 
 	p2.Negate();
 	p2.Display("p2(Negate) = ");
+}
+
+void Week2Manager::SparsePolyTest1()
+{
+	SparsePoly sp;
 }
