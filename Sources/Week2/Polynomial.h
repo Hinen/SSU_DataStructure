@@ -59,6 +59,7 @@ public:
 
 	void Negate()
 	{
-		// TODO
+		for (int i = 0; i <= _degree; i++)
+			_coef[i] = -_coef[i];
 	}
 };
