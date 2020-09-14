@@ -22,6 +22,7 @@
     <ClInclude Include="Sources\Manager.h" />
     <ClInclude Include="Sources\stdafx.h" />
     <ClInclude Include="Sources\Week1\Week1Manager.h" />
+    <ClInclude Include="Sources\Week2\Polynomial.h" />
     <ClInclude Include="Sources\Week2\Week2Manager.h" />
     <ClInclude Include="Sources\WeekManagerBase.h" />
   </ItemGroup>

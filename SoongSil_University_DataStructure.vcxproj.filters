@@ -36,6 +36,9 @@
     <ClInclude Include="Sources\Week2\Week2Manager.h">
       <Filter>Week2</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week2\Polynomial.h">
+      <Filter>Week2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
