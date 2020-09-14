@@ -16,6 +16,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Week2">
+      <UniqueIdentifier>{2c89b893-7ab5-4022-87cb-78fab54b0f9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -30,6 +33,9 @@
     <ClInclude Include="Sources\Week1\Week1Manager.h">
       <Filter>Week1</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week2\Week2Manager.h">
+      <Filter>Week2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -40,6 +46,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week1\Week1Manager.cpp">
       <Filter>Week1</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week2\Week2Manager.cpp">
+      <Filter>Week2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
