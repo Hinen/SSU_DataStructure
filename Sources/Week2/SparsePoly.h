@@ -21,9 +21,9 @@ private:
 	Term _term[MAX_TERMS];
 
 public:
-	void Read()
+	void Read(char *str = "SparsePoly")
 	{
-		printf("희소 다항식 항의 개수를 입력하시오: ");
+		printf("%s의 희소 다항식 항의 개수를 입력하시오: ", str);
 		scanf("%d", &_nTerms);
 
 		printf("각 항의 계수를 입력하시오 (총 %d개): ", _nTerms);
@@ -37,7 +37,10 @@ public:
 
 	void Display(char *str = "SparsePoly Display")
 	{
-		printf("%s\n", str);
+		printf("\n%s\n", str);
+
+		// bubble sort by expon
+		Sort();
 
 		// Show All
 		for (int i = 0; i < _nTerms; i++)
@@ -46,20 +49,6 @@ public:
 				printf("\t%5.1f\n", _term[i].coef);
 			else
 				printf("\t%5.1f x^%d\n", _term[i].coef, _term[i].expon);
-		}
-
-		// bubble sort by expon
-		for (int i = 0; i < _nTerms - 1; i++)
-		{
-			for (int j = i + 1; j < _nTerms; j++)
-			{
-				if (_term[i].expon < _term[j].expon)
-				{
-					Term temp = _term[i];
-					_term[i] = _term[j];
-					_term[j] = temp;
-				}
-			}
 		}
 
 		// Show Sparse Poly
@@ -78,8 +67,49 @@ public:
 		}
 	}
 
-	void Add()
+	void Add(SparsePoly sp1, SparsePoly sp2)
 	{
+		*this = sp1;
 
+		int incTermCount = 0;
+		for (int i = 0; i < sp2._nTerms; i++)
+		{
+			bool isFindSameExpon = false;
+			for (int j = 0; j < _nTerms; j++)
+			{
+				if (_term[j].expon == sp2._term[i].expon)
+				{
+					_term[j].coef += sp2._term[i].coef;
+					isFindSameExpon = true;
+					break;
+				}
+			}
+
+			if (!isFindSameExpon)
+			{
+				_term[_nTerms + incTermCount] = sp2._term[i];
+				incTermCount++;
+			}
+		}
+
+		_nTerms += incTermCount;
+
+		Sort();
+	}
+
+	void Sort()
+	{
+		for (int i = 0; i < _nTerms - 1; i++)
+		{
+			for (int j = i + 1; j < _nTerms; j++)
+			{
+				if (_term[i].expon < _term[j].expon)
+				{
+					Term temp = _term[i];
+					_term[i] = _term[j];
+					_term[j] = temp;
+				}
+			}
+		}
 	}
 };
