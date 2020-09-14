@@ -15,6 +15,7 @@ private:
 	int _degree;
 	float _coef[MAX_DEGREE];
 
+public:
 	void Read()
 	{
 		printf("다항식의 최고 차수를 입력하시오: ");
