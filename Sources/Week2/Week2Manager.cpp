@@ -48,4 +48,7 @@ void Week2Manager::PolynomialTest1()
 void Week2Manager::SparsePolyTest1()
 {
 	SparsePoly sp;
+
+	sp.Read();
+	sp.Display();
 }
