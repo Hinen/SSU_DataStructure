@@ -3,7 +3,8 @@
 
 int main()
 {
-	auto manager = new Week1Manager();
+	//auto manager = new Week1Manager();
+	auto manager = new Week2Manager();
 
 	manager->Main();
 
