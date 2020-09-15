@@ -34,15 +34,15 @@ public:
 		cout << "각 항의 지수를 입력하시오 (총 " << _nTerms << "개) : ";
 		for (int i = 0; i < _nTerms; i++)
 			cin >> _term[i].expon;
+
+		// bubble sort by expon
+		Sort();
 	}
 
 	void Display(char *str = "SparsePoly Display = ")
 	{
 		cout << endl;
 		cout << str;
-
-		// bubble sort by expon
-		Sort();
 
 		// Show Sparse Poly
 		for (int i = 0; i < _nTerms; i++)
