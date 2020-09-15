@@ -28,15 +28,15 @@ void Week2Manager::PolynomialTest1()
 	
 	p1.Display("p1 = ");
 	if (p1.IsZero())
-		printf("\tp1 is zero!\n");
+		cout << "\tp1 is zero!" << endl;
 
 	p2.Display("p2 = ");
 	if (p2.IsZero())
-		printf("\tp2 is zero!\n");
+		cout << "\tp2 is zero!" << endl;
 
 	p3.Display("p3(p1 + p2) = ");
 
-	printf("\n");
+	cout << endl;
 
 	p1.Negate();
 	p1.Display("p1(Negate) = ");
