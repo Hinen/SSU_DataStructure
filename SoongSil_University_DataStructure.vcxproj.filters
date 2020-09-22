@@ -19,6 +19,9 @@
     <Filter Include="Week2">
       <UniqueIdentifier>{2c89b893-7ab5-4022-87cb-78fab54b0f9b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week3">
+      <UniqueIdentifier>{ebc7048e-ea1f-4564-b9c4-dce50d2a4701}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -42,6 +45,12 @@
     <ClInclude Include="Sources\Week2\SparsePoly.h">
       <Filter>Week2</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week3\Week3Manager.h">
+      <Filter>Week3</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week3\Location2D.h">
+      <Filter>Week3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -55,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week2\Week2Manager.cpp">
       <Filter>Week2</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week3\Week3Manager.cpp">
+      <Filter>Week3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
