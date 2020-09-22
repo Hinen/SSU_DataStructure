@@ -100,7 +100,7 @@ void Week3Manager::MazeSearch()
 		}
 	}
 
-	cout << "미로 탐색 " << (isSuccessFindExit ? "성공!" : "실패..") << endl;
+	cout << "미로 탐색 " << (isSuccessFindExit ? "성공!" : "실패.. (이 미로는 출구가 존재하지 않습니다.)") << endl;
 }
 
 bool Week3Manager::IsValidLocation(int r, int c)
