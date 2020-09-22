@@ -25,12 +25,14 @@
     <ClInclude Include="Sources\Week2\Polynomial.h" />
     <ClInclude Include="Sources\Week2\SparsePoly.h" />
     <ClInclude Include="Sources\Week2\Week2Manager.h" />
+    <ClInclude Include="Sources\Week3\Week3Manager.h" />
     <ClInclude Include="Sources\WeekManagerBase.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp" />
     <ClCompile Include="Sources\Week1\Week1Manager.cpp" />
     <ClCompile Include="Sources\Week2\Week2Manager.cpp" />
+    <ClCompile Include="Sources\Week3\Week3Manager.cpp" />
     <ClCompile Include="Sources\WeekManagerBase.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
