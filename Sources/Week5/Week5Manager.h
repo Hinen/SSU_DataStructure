@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../WeekManagerBase.h"
+#include <queue>
 
 class Week5Manager : public WeekManagerBase
 {
@@ -10,4 +11,7 @@ public:
 
 public:
 	virtual void Main() override;
+
+private:
+	void FibonacciNumbers();
 };
