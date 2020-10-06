@@ -57,6 +57,9 @@
     <ClInclude Include="Sources\Week5\Week5Manager.h">
       <Filter>Week5</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week3\MazeMap.h">
+      <Filter>Week3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">

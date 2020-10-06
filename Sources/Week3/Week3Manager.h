@@ -2,6 +2,7 @@
 
 #include "../WeekManagerBase.h"
 #include "Location2D.h"
+#include "MazeMap.h"
 #include <stack>
 
 class Week3Manager : public WeekManagerBase
