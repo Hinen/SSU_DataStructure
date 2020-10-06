@@ -10,8 +10,6 @@ public:
 
 	virtual void Main();
 
-	int a;
-
 private:
 	int _week;
 };
