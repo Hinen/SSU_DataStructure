@@ -17,16 +17,6 @@ void Week3Manager::Main()
 	MazeSearch();
 }
 
-const int mazeSize = 6;
-char map[mazeSize][mazeSize] = {
-	{ '1', '1', '1', '1', '1', '1' },
-	{ 'e', '0', '1', '0', '0', '1' },
-	{ '1', '0', '0', '0', '1', '1' },
-	{ '1', '0', '1', '0', '1', '1' },
-	{ '1', '0', '1', '0', '0', 'x' },
-	{ '1', '1', '1', '1', '1', '1' },
-};
-
 void Week3Manager::MazeSearch()
 {
 	int startPosX = -1;

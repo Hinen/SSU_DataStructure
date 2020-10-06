@@ -26,7 +26,9 @@
     <ClInclude Include="Sources\Week2\SparsePoly.h" />
     <ClInclude Include="Sources\Week2\Week2Manager.h" />
     <ClInclude Include="Sources\Week3\Location2D.h" />
+    <ClInclude Include="Sources\Week3\MazeMap.h" />
     <ClInclude Include="Sources\Week3\Week3Manager.h" />
+    <ClInclude Include="Sources\Week5\Week5Manager.h" />
     <ClInclude Include="Sources\WeekManagerBase.h" />
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +36,7 @@
     <ClCompile Include="Sources\Week1\Week1Manager.cpp" />
     <ClCompile Include="Sources\Week2\Week2Manager.cpp" />
     <ClCompile Include="Sources\Week3\Week3Manager.cpp" />
+    <ClCompile Include="Sources\Week5\Week5Manager.cpp" />
     <ClCompile Include="Sources\WeekManagerBase.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
