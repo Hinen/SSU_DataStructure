@@ -90,6 +90,10 @@ void Week6Manager::LinkedStackTest()
 	stack.Push(new LinkedStackNode(20192762, "박수빈", "미디어경영학과"));
 	stack.Push(new LinkedStackNode(20180437, "전우성", "미디어경영학과"));
 
+	cout << "stack print all" << endl;
+	stack.Display();
+	cout << endl;
+
 	cout << "stack peek display " << endl;
 	stack.Peek()->Display();
 	cout << endl;
@@ -118,6 +122,10 @@ void Week6Manager::LinkedQueueTest()
 
 	queue.Enqueue(new LinkedQueueNode(1));
 	queue.Enqueue(new LinkedQueueNode(2));
+
+	cout << "queue print all" << endl;
+	queue.Display();
+	cout << endl;
 
 	cout << "queue peek display " << endl;
 	queue.Peek()->Display();
