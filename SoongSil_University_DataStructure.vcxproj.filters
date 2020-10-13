@@ -25,6 +25,9 @@
     <Filter Include="Week5">
       <UniqueIdentifier>{15d36e1e-92b7-4581-99e4-37966b8532e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week6">
+      <UniqueIdentifier>{5317bd31-5d81-42e1-8059-813b0d497fef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -60,6 +63,9 @@
     <ClInclude Include="Sources\Week3\MazeMap.h">
       <Filter>Week3</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week6\Week6Manager.h">
+      <Filter>Week6</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -79,6 +85,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week5\Week5Manager.cpp">
       <Filter>Week5</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week6\Week6Manager.cpp">
+      <Filter>Week6</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
