@@ -29,6 +29,12 @@
     <ClInclude Include="Sources\Week3\MazeMap.h" />
     <ClInclude Include="Sources\Week3\Week3Manager.h" />
     <ClInclude Include="Sources\Week5\Week5Manager.h" />
+    <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueue.h" />
+    <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueueNode.h" />
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStack.h" />
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackNode.h" />
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackStudent.h" />
+    <ClInclude Include="Sources\Week6\Week6Manager.h" />
     <ClInclude Include="Sources\WeekManagerBase.h" />
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +43,7 @@
     <ClCompile Include="Sources\Week2\Week2Manager.cpp" />
     <ClCompile Include="Sources\Week3\Week3Manager.cpp" />
     <ClCompile Include="Sources\Week5\Week5Manager.cpp" />
+    <ClCompile Include="Sources\Week6\Week6Manager.cpp" />
     <ClCompile Include="Sources\WeekManagerBase.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

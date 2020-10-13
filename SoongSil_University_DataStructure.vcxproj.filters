@@ -25,6 +25,15 @@
     <Filter Include="Week5">
       <UniqueIdentifier>{15d36e1e-92b7-4581-99e4-37966b8532e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week6">
+      <UniqueIdentifier>{5317bd31-5d81-42e1-8059-813b0d497fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Week6\LinkedStack">
+      <UniqueIdentifier>{def2d23e-3f1d-4cae-9da7-06f2e6c61224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Week6\LinkedQueue">
+      <UniqueIdentifier>{5bcee63e-04e4-4a6c-96f9-df95e4805185}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -60,6 +69,24 @@
     <ClInclude Include="Sources\Week3\MazeMap.h">
       <Filter>Week3</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week6\Week6Manager.h">
+      <Filter>Week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStack.h">
+      <Filter>Week6\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackNode.h">
+      <Filter>Week6\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackStudent.h">
+      <Filter>Week6\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueue.h">
+      <Filter>Week6\LinkedQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueueNode.h">
+      <Filter>Week6\LinkedQueue</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -79,6 +106,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week5\Week5Manager.cpp">
       <Filter>Week5</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week6\Week6Manager.cpp">
+      <Filter>Week6</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
