@@ -14,7 +14,9 @@ void Week6Manager::Main()
 {
 	WeekManagerBase::Main();
 
-	VariableArr2D();
+	//VariableArr2D();
+	//LinkedStackTest();
+	LinkedQueueTest();
 }
 
 void Week6Manager::VariableArr2D()
@@ -79,4 +81,62 @@ void Week6Manager::DeleteArr2D(int** arr2D, int rowSize)
 	}
 
 	delete[] arr2D;
+}
+
+void Week6Manager::LinkedStackTest()
+{
+	LinkedStack stack;
+
+	stack.Push(new LinkedStackNode(20192762, "박수빈", "미디어경영학과"));
+	stack.Push(new LinkedStackNode(20180437, "전우성", "미디어경영학과"));
+
+	cout << "stack peek display " << endl;
+	stack.Peek()->Display();
+	cout << endl;
+
+	cout << "stack print all" << endl;
+	stack.Display();
+	cout << endl;
+
+	cout << "stack pop display" << endl;
+	LinkedStackNode* node = stack.Pop();
+	if (node != NULL)
+	{
+		node->Display();
+		delete node;
+	}
+	cout << endl;
+
+	cout << "stack print all" << endl;
+	stack.Display();
+	cout << endl;
+}
+
+void Week6Manager::LinkedQueueTest()
+{
+	LinkedQueue queue;
+
+	queue.Enqueue(new LinkedQueueNode(1));
+	queue.Enqueue(new LinkedQueueNode(2));
+
+	cout << "queue peek display " << endl;
+	queue.Peek()->Display();
+	cout << endl;
+
+	cout << "queue print all" << endl;
+	queue.Display();
+	cout << endl;
+
+	cout << "queue dequeue display" << endl;
+	LinkedQueueNode* node = queue.Dequeue();
+	if (node != NULL)
+	{
+		node->Display();
+		delete node;
+	}
+	cout << endl;
+
+	cout << "queue print all" << endl;
+	queue.Display();
+	cout << endl;
 }

@@ -28,6 +28,12 @@
     <Filter Include="Week6">
       <UniqueIdentifier>{5317bd31-5d81-42e1-8059-813b0d497fef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week6\LinkedStack">
+      <UniqueIdentifier>{def2d23e-3f1d-4cae-9da7-06f2e6c61224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Week6\LinkedQueue">
+      <UniqueIdentifier>{5bcee63e-04e4-4a6c-96f9-df95e4805185}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -65,6 +71,21 @@
     </ClInclude>
     <ClInclude Include="Sources\Week6\Week6Manager.h">
       <Filter>Week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStack.h">
+      <Filter>Week6\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackNode.h">
+      <Filter>Week6\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackStudent.h">
+      <Filter>Week6\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueue.h">
+      <Filter>Week6\LinkedQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueueNode.h">
+      <Filter>Week6\LinkedQueue</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

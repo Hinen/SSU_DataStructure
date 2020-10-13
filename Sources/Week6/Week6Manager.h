@@ -1,6 +1,8 @@
 #pragma once
 
 #include "../WeekManagerBase.h"
+#include "LinkedStack\LinkedStack.h"
+#include "LinkedQueue\LinkedQueue.h"
 
 class Week6Manager : public WeekManagerBase
 {
@@ -17,4 +19,7 @@ private:
 	void SetRandomDataArr2D(int** arr2D, int rowSize, int columnSize);
 	void PrintAllArr2D(int** arr2D, int rowSize, int columnSize);
 	void DeleteArr2D(int** arr2D, int rowSize);
+
+	void LinkedStackTest();
+	void LinkedQueueTest();
 };
