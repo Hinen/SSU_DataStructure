@@ -34,14 +34,9 @@ public:
 	void Enqueue(LinkedQueueNode* n)
 	{
 		if (IsEmpty())
-		{
 			_front = n;
-			_rear = n;
-		}
 		else
-		{
 			_rear->SetLink(n);
-		}
 
 		_rear = n;
 	}
