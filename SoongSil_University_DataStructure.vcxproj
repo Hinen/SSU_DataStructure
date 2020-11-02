@@ -35,6 +35,8 @@
     <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackNode.h" />
     <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackStudent.h" />
     <ClInclude Include="Sources\Week6\Week6Manager.h" />
+    <ClInclude Include="Sources\Week8\LinkedList\LinkedList.h" />
+    <ClInclude Include="Sources\Week8\LinkedList\Node.h" />
     <ClInclude Include="Sources\Week8\Week8Manager.h" />
     <ClInclude Include="Sources\WeekManagerBase.h" />
   </ItemGroup>
