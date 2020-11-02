@@ -34,6 +34,9 @@
     <Filter Include="Week6\LinkedQueue">
       <UniqueIdentifier>{5bcee63e-04e4-4a6c-96f9-df95e4805185}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week8">
+      <UniqueIdentifier>{d99ea41a-45bb-40ce-b5d0-862f02310d23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -87,6 +90,9 @@
     <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueueNode.h">
       <Filter>Week6\LinkedQueue</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week8\Week8Manager.h">
+      <Filter>Week8</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -109,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week6\Week6Manager.cpp">
       <Filter>Week6</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week8\Week8Manager.cpp">
+      <Filter>Week8</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
