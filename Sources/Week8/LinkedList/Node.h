@@ -17,6 +17,11 @@ public:
 		return _link;
 	}
 
+	int GetData()
+	{
+		return _data;
+	}
+
 	void SetLink(Node* next)
 	{
 		_link = next;

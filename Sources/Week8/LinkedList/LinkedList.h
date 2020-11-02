@@ -19,6 +19,11 @@ public:
 		return _org.GetLink();
 	}
 
+	void SetHead(Node* n)
+	{
+		return _org.SetLink(n);
+	}
+
 	bool IsEmpty()
 	{
 		return GetHead() == NULL;

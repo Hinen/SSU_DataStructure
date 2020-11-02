@@ -2,6 +2,7 @@
 
 #include "../WeekManagerBase.h"
 #include "LinkedList\LinkedList.h"
+#include "LinkedList\LinkedListExtend.h"
 
 class Week8Manager : public WeekManagerBase
 {
@@ -14,4 +15,5 @@ public:
 
 private:
 	void LinkedListTest();
+	void LinkedListTestExtend();
 };
