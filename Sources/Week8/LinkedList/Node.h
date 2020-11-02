@@ -24,7 +24,7 @@ public:
 
 	void Display()
 	{
-		cout << "  " << _data;
+		cout << " <" << _data << ">";
 	}
 	
 	bool HasData(int val)

@@ -57,11 +57,11 @@ public:
 
 	void Display()
 	{
-		printf("[전체 항목 수 = %2d] : ", Size());
+		cout << "[단순연결리스트 항목 수 = " << Size() << "] : ";
 		for (Node *p = GetHead(); p != NULL; p = p->GetLink())
 			p->Display();
 
-		printf("\n");
+		cout << endl;
 	}
 
 	int Size()
