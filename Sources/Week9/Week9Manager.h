@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../WeekManagerBase.h"
+#include <string.h>
 
 class Week9Manager : public WeekManagerBase
 {
@@ -14,4 +15,6 @@ public:
 private:
 	int SumRecursion(int num);
 	float SumRecursion2(int num);
+
+	char* StrReverseRecursion(char* str);
 };

@@ -17,3 +17,25 @@ float Week9Manager::SumRecursion2(int num)
 {
 	return num == 1.f ? 1.f : 1.f / num + SumRecursion2(num - 1);
 }
+
+char* Week9Manager::StrReverseRecursion(char* str)
+{
+	int len = strlen(str);
+
+	if (len == 1)
+	{
+		char* str2 = new char[0];
+		strcpy(str2, str);
+		return str2;
+	}
+	else
+	{
+		char* str2 = new char[len];
+		strcpy(str2, str + 1);
+
+		char* newStr = StrReverseRecursion(str2);
+		delete str2;
+
+		return strncat(newStr, str, 1);
+	}
+}
