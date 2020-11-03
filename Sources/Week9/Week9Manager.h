@@ -10,4 +10,8 @@ public:
 
 public:
 	virtual void Main() override;
+
+private:
+	int SumRecursion(int num);
+	float SumRecursion2(int num);
 };
