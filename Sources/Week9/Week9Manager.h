@@ -16,5 +16,8 @@ private:
 	int SumRecursion(int num);
 	float SumRecursion2(int num);
 
+	void FiboRecursionCountMain(int n);
+	int FiboRecursionCount(int* countArr, int n);
+
 	char* StrReverseRecursion(char* str);
 };
