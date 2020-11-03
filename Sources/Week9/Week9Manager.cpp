@@ -4,8 +4,12 @@ void Week9Manager::Main()
 {
 	WeekManagerBase::Main();
 
-	cout << SumRecursion(10) << endl;
-	cout << SumRecursion2(3) << endl;
+	//cout << SumRecursion(10) << endl;
+	//cout << SumRecursion2(3) << endl;
+
+	char* a = "asdf";
+	char* b = StrReverseRecursion(a);
+	cout << a << endl << b << endl;
 }
 
 int Week9Manager::SumRecursion(int num)
