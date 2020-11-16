@@ -40,6 +40,9 @@
     <Filter Include="Week8\LinkedList">
       <UniqueIdentifier>{50f659d4-37a1-4588-9460-9dea3b6084ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week9">
+      <UniqueIdentifier>{732419b4-d679-4642-b4bc-3ddb704b7427}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -105,6 +108,9 @@
     <ClInclude Include="Sources\Week8\LinkedList\LinkedListExtend.h">
       <Filter>Week8\LinkedList</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week9\Week9Manager.h">
+      <Filter>Week9</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -130,6 +136,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week8\Week8Manager.cpp">
       <Filter>Week8</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week9\Week9Manager.cpp">
+      <Filter>Week9</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
