@@ -7,3 +7,4 @@
 #include "Week6\Week6Manager.h"
 #include "Week8\Week8Manager.h"
 #include "Week9\Week9Manager.h"
+#include "Week10\Week10Manager.h"
