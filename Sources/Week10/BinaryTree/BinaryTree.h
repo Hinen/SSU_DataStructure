@@ -14,7 +14,7 @@ public:
 		delete _root;
 	}
 
-private:
+public:
 	enum TraversalType
 	{
 		Preorder,
@@ -26,23 +26,18 @@ private:
 	BinaryTreeNode* _root;
 
 public:
-	void PreorderTraversal()
+	void ShowValueTraversal(TraversalType type)
 	{
-		Traversal(_root, 1, Preorder);
+		ShowValueTraversal(_root, 1, type);
 	}
 
-	void InorderTraversal()
+	int GetAllNodeCount(TraversalType type)
 	{
-		Traversal(_root, 1, Inorder);
-	}
-
-	void PostorderTraversal()
-	{
-		Traversal(_root, 1, Postorder);
+		return GetAllNodeCountTraversal(_root, type);
 	}
 
 private:
-	void Traversal(BinaryTreeNode* node, int level, TraversalType type)
+	void ShowValueTraversal(BinaryTreeNode* node, int level, TraversalType type)
 	{
 		if (node == NULL)
 			return;
@@ -50,14 +45,37 @@ private:
 		if (type == Preorder)
 			cout << "Level " << level << " " << node->GetValue() << endl;
 
-		Traversal(node->GetLeft(), level + 1, type);
+		ShowValueTraversal(node->GetLeft(), level + 1, type);
 
 		if (type == Inorder)
 			cout << "Level " << level << " " << node->GetValue() << endl;
 
-		Traversal(node->GetRight(), level + 1, type);
+		ShowValueTraversal(node->GetRight(), level + 1, type);
 
 		if (type == Postorder)
 			cout << "Level " << level << " " << node->GetValue() << endl;
+	}
+
+	int GetAllNodeCountTraversal(BinaryTreeNode* node, TraversalType type)
+	{
+		int count = 0;
+
+		if (node == NULL)
+			return count;
+
+		if (type == Preorder)
+			count++;
+
+		count += GetAllNodeCountTraversal(node->GetLeft(), type);
+
+		if (type == Inorder)
+			count++;
+
+		count += GetAllNodeCountTraversal(node->GetRight(), type);
+
+		if (type == Postorder)
+			count++;
+
+		return count;
 	}
 };
