@@ -32,7 +32,7 @@ void Week10Manager::BinaryTreeTest()
 	int nodeCount = tree->GetAllNodeCount(BinaryTree::Preorder);
 	//int nodeCount = tree->GetAllNodeCount(BinaryTree::Inorder);
 	//int nodeCount = tree->GetAllNodeCount(BinaryTree::Postorder);
-	cout << "Tree Count : " << nodeCount << endl;
+	cout << "Tree Node Count : " << nodeCount << endl;
 
 	//
 	cout << "Tree Terminal Node Count : " << tree->GetTerminalNodeCount() << endl;
