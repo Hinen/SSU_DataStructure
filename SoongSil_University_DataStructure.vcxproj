@@ -35,6 +35,10 @@
     <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackNode.h" />
     <ClInclude Include="Sources\Week6\LinkedStack\LinkedStackStudent.h" />
     <ClInclude Include="Sources\Week6\Week6Manager.h" />
+    <ClInclude Include="Sources\Week8\LinkedList\LinkedList.h" />
+    <ClInclude Include="Sources\Week8\LinkedList\LinkedListExtend.h" />
+    <ClInclude Include="Sources\Week8\LinkedList\Node.h" />
+    <ClInclude Include="Sources\Week8\Week8Manager.h" />
     <ClInclude Include="Sources\WeekManagerBase.h" />
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +48,7 @@
     <ClCompile Include="Sources\Week3\Week3Manager.cpp" />
     <ClCompile Include="Sources\Week5\Week5Manager.cpp" />
     <ClCompile Include="Sources\Week6\Week6Manager.cpp" />
+    <ClCompile Include="Sources\Week8\Week8Manager.cpp" />
     <ClCompile Include="Sources\WeekManagerBase.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -9,9 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Week1">
-      <UniqueIdentifier>{0f3eb8c2-c8c7-4c51-8568-5f704d880ba2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -33,6 +30,15 @@
     </Filter>
     <Filter Include="Week6\LinkedQueue">
       <UniqueIdentifier>{5bcee63e-04e4-4a6c-96f9-df95e4805185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Week1">
+      <UniqueIdentifier>{0f3eb8c2-c8c7-4c51-8568-5f704d880ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Week8">
+      <UniqueIdentifier>{d99ea41a-45bb-40ce-b5d0-862f02310d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Week8\LinkedList">
+      <UniqueIdentifier>{50f659d4-37a1-4588-9460-9dea3b6084ee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +93,18 @@
     <ClInclude Include="Sources\Week6\LinkedQueue\LinkedQueueNode.h">
       <Filter>Week6\LinkedQueue</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week8\Week8Manager.h">
+      <Filter>Week8</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week8\LinkedList\Node.h">
+      <Filter>Week8\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week8\LinkedList\LinkedList.h">
+      <Filter>Week8\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week8\LinkedList\LinkedListExtend.h">
+      <Filter>Week8\LinkedList</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -109,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week6\Week6Manager.cpp">
       <Filter>Week6</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week8\Week8Manager.cpp">
+      <Filter>Week8</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
