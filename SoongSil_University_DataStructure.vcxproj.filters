@@ -46,6 +46,9 @@
     <Filter Include="Week10">
       <UniqueIdentifier>{60dd0e89-df7e-4181-8c99-e7ed07e33d70}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week10\BinaryTree">
+      <UniqueIdentifier>{aa53a5f8-ef4c-4708-8ee4-5ef69e3e5c83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -117,6 +120,12 @@
     <ClInclude Include="Sources\Week10\Week10Manager.h">
       <Filter>Week10</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week10\BinaryTree\BinaryTree.h">
+      <Filter>Week10\BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week10\BinaryTree\BinaryTreeNode.h">
+      <Filter>Week10\BinaryTree</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -147,7 +156,7 @@
       <Filter>Week9</Filter>
     </ClCompile>
     <ClCompile Include="Sources\Week10\Week10Manager.cpp">
-      <Filter>Week10</Filter>
+      <Filter>Week10\BinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

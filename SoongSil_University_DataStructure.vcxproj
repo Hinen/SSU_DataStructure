@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClInclude Include="Sources\Manager.h" />
     <ClInclude Include="Sources\stdafx.h" />
+    <ClInclude Include="Sources\Week10\BinaryTree\BinaryTree.h" />
+    <ClInclude Include="Sources\Week10\BinaryTree\BinaryTreeNode.h" />
     <ClInclude Include="Sources\Week10\Week10Manager.h" />
     <ClInclude Include="Sources\Week1\Week1Manager.h" />
     <ClInclude Include="Sources\Week2\Polynomial.h" />
