@@ -36,6 +36,16 @@ public:
 		return GetAllNodeCountTraversal(_root, type);
 	}
 
+	int GetTerminalNodeCount()
+	{
+		return GetTerminalNodeCount(_root);
+	}
+
+	int GetHeight()
+	{
+		return GetHeight(_root);
+	}
+
 private:
 	void ShowValueTraversal(BinaryTreeNode* node, int level, TraversalType type)
 	{
@@ -77,5 +87,27 @@ private:
 			count++;
 
 		return count;
+	}
+
+	int GetTerminalNodeCount(BinaryTreeNode* node)
+	{
+		if (node == NULL)
+			return 0;
+
+		if (node->GetLeft() == NULL && node->GetRight() == NULL)
+			return 1;
+		
+		return GetTerminalNodeCount(node->GetLeft()) + GetTerminalNodeCount(node->GetRight());
+	}
+
+	int GetHeight(BinaryTreeNode* node)
+	{
+		if (node == NULL)
+			return 0;
+
+		int leftHeight = GetHeight(node->GetLeft());
+		int rightHeight = GetHeight(node->GetRight());
+
+		return (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
 	}
 };
