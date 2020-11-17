@@ -24,15 +24,20 @@ void Week10Manager::BinaryTreeTest()
 	BinaryTree* tree = new BinaryTree(a);
 
 	//
+	cout << "Tree Order Traversal" << endl;
 	tree->ShowValueTraversal(BinaryTree::Preorder);
 	//tree->ShowValueTraversal(BinaryTree::Inorder);
 	//tree->ShowValueTraversal(BinaryTree::Postorder);
 
 	//
+	cout << endl << "Tree Level Traversal" << endl;
+	tree->ShowValueLevelTraversal();
+
+	//
 	int nodeCount = tree->GetAllNodeCount(BinaryTree::Preorder);
 	//int nodeCount = tree->GetAllNodeCount(BinaryTree::Inorder);
 	//int nodeCount = tree->GetAllNodeCount(BinaryTree::Postorder);
-	cout << "Tree Node Count : " << nodeCount << endl;
+	cout << endl << "Tree Node Count : " << nodeCount << endl;
 
 	//
 	cout << "Tree Terminal Node Count : " << tree->GetTerminalNodeCount() << endl;
