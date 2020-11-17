@@ -1,5 +1,6 @@
 #pragma once
 #include "BinaryTreeNode.h"
+#include <queue>
 
 class BinaryTree
 {
@@ -29,6 +30,16 @@ public:
 	void ShowValueTraversal(TraversalType type)
 	{
 		ShowValueTraversal(_root, type);
+	}
+
+	void ShowValueLevelTraversal()
+	{
+		queue<BinaryTreeNode*>* _queue = new queue<BinaryTreeNode*>();
+		_queue->push(_root);
+
+		ShowValueLevelTraversal(_queue);
+
+		delete _queue;
 	}
 
 	int GetAllNodeCount(TraversalType type)
@@ -64,6 +75,24 @@ private:
 
 		if (type == Postorder)
 			cout << node->GetValue() << endl;
+	}
+
+	void ShowValueLevelTraversal(queue<BinaryTreeNode*>* queue)
+	{
+		if (queue->size() == 0)
+			return;
+
+		BinaryTreeNode* node = queue->front();
+		queue->pop();
+
+		if (node != NULL)
+		{
+			cout << node->GetValue() << endl;
+			queue->push(node->GetLeft());
+			queue->push(node->GetRight());
+		}
+
+		ShowValueLevelTraversal(queue);
 	}
 
 	int GetAllNodeCountTraversal(BinaryTreeNode* node, TraversalType type)
