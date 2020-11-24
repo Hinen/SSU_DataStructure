@@ -1,6 +1,7 @@
 #pragma once
 #include "BinaryTreeNode.h"
 #include "BinaryTreeTraversalType.h"
+#include <queue>
 
 template<typename T>
 
@@ -23,7 +24,17 @@ private:
 public:
 	void ShowValueTraversal(BinaryTreeTraversalType type)
 	{
-		ShowValueTraversal(_root, 1, type);
+		ShowValueTraversal(_root, type);
+	}
+
+	void ShowValueLevelTraversal()
+	{
+		queue<BinaryTreeNode<T>*>* _queue = new queue<BinaryTreeNode<T>*>();
+		_queue->push(_root);
+
+		ShowValueLevelTraversal(_queue);
+
+		delete _queue;
 	}
 
 	int GetAllNodeCount(BinaryTreeTraversalType type)
@@ -42,23 +53,41 @@ public:
 	}
 
 private:
-	void ShowValueTraversal(BinaryTreeNode<T>* node, int level, BinaryTreeTraversalType type)
+	void ShowValueTraversal(BinaryTreeNode<T>* node, BinaryTreeTraversalType type)
 	{
 		if (node == NULL)
 			return;
 
 		if (type == Preorder)
-			cout << "Level " << level << " " << node->GetValue() << endl;
+			cout << node->GetValue() << endl;
 
-		ShowValueTraversal(node->GetLeft(), level + 1, type);
+		ShowValueTraversal(node->GetLeft(), type);
 
 		if (type == Inorder)
-			cout << "Level " << level << " " << node->GetValue() << endl;
+			cout << node->GetValue() << endl;
 
-		ShowValueTraversal(node->GetRight(), level + 1, type);
+		ShowValueTraversal(node->GetRight(), type);
 
 		if (type == Postorder)
-			cout << "Level " << level << " " << node->GetValue() << endl;
+			cout << node->GetValue() << endl;
+	}
+
+	void ShowValueLevelTraversal(queue<BinaryTreeNode<T>*>* queue)
+	{
+		if (queue->size() == 0)
+			return;
+
+		BinaryTreeNode<T>* node = queue->front();
+		queue->pop();
+
+		if (node != NULL)
+		{
+			cout << node->GetValue() << endl;
+			queue->push(node->GetLeft());
+			queue->push(node->GetRight());
+		}
+
+		ShowValueLevelTraversal(queue);
 	}
 
 	int GetAllNodeCountTraversal(BinaryTreeNode<T>* node, BinaryTreeTraversalType type)
