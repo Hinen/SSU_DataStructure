@@ -1,11 +1,19 @@
 #pragma once
 #include "BinaryTreeNode.h"
+#include "BinaryTreeTraversalType.h"
 #include <queue>
+
+template<typename T>
 
 class BinaryTree
 {
 public:
-	BinaryTree(BinaryTreeNode* root)
+	BinaryTree()
+	{
+		_root = NULL;
+	}
+
+	BinaryTree(BinaryTreeNode<T>* root)
 	{
 		_root = root;
 	}
@@ -15,26 +23,18 @@ public:
 		delete _root;
 	}
 
-public:
-	enum TraversalType
-	{
-		Preorder,
-		Inorder,
-		Postorder
-	};
-
-private:
-	BinaryTreeNode* _root;
+protected:
+	BinaryTreeNode<T>* _root;
 
 public:
-	void ShowValueTraversal(TraversalType type)
+	void ShowValueTraversal(BinaryTreeTraversalType type)
 	{
 		ShowValueTraversal(_root, type);
 	}
 
 	void ShowValueLevelTraversal()
 	{
-		queue<BinaryTreeNode*>* _queue = new queue<BinaryTreeNode*>();
+		queue<BinaryTreeNode<T>*>* _queue = new queue<BinaryTreeNode<T>*>();
 		_queue->push(_root);
 
 		ShowValueLevelTraversal(_queue);
@@ -42,7 +42,7 @@ public:
 		delete _queue;
 	}
 
-	int GetAllNodeCount(TraversalType type)
+	int GetAllNodeCount(BinaryTreeTraversalType type)
 	{
 		return GetAllNodeCountTraversal(_root, type);
 	}
@@ -58,7 +58,7 @@ public:
 	}
 
 private:
-	void ShowValueTraversal(BinaryTreeNode* node, TraversalType type)
+	void ShowValueTraversal(BinaryTreeNode<T>* node, BinaryTreeTraversalType type)
 	{
 		if (node == NULL)
 			return;
@@ -77,12 +77,12 @@ private:
 			cout << node->GetValue() << endl;
 	}
 
-	void ShowValueLevelTraversal(queue<BinaryTreeNode*>* queue)
+	void ShowValueLevelTraversal(queue<BinaryTreeNode<T>*>* queue)
 	{
 		if (queue->size() == 0)
 			return;
 
-		BinaryTreeNode* node = queue->front();
+		BinaryTreeNode<T>* node = queue->front();
 		queue->pop();
 
 		if (node != NULL)
@@ -95,7 +95,7 @@ private:
 		ShowValueLevelTraversal(queue);
 	}
 
-	int GetAllNodeCountTraversal(BinaryTreeNode* node, TraversalType type)
+	int GetAllNodeCountTraversal(BinaryTreeNode<T>* node, BinaryTreeTraversalType type)
 	{
 		int count = 0;
 
@@ -118,7 +118,7 @@ private:
 		return count;
 	}
 
-	int GetTerminalNodeCount(BinaryTreeNode* node)
+	int GetTerminalNodeCount(BinaryTreeNode<T>* node)
 	{
 		if (node == NULL)
 			return 0;
@@ -129,7 +129,7 @@ private:
 		return GetTerminalNodeCount(node->GetLeft()) + GetTerminalNodeCount(node->GetRight());
 	}
 
-	int GetHeight(BinaryTreeNode* node)
+	int GetHeight(BinaryTreeNode<T>* node)
 	{
 		if (node == NULL)
 			return 0;

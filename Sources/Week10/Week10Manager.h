@@ -3,6 +3,7 @@
 #include "../WeekManagerBase.h"
 #include "BinaryTree\BinaryTree.h"
 #include "BinaryTree\BinaryTreeNode.h"
+#include "BinaryTree\BinaryTreeTraversalType.h"
 
 class Week10Manager : public WeekManagerBase
 {

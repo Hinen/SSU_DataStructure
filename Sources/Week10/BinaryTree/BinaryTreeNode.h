@@ -1,10 +1,12 @@
 #pragma once
 #include "../../stdafx.h"
 
+template <typename T>
+
 class BinaryTreeNode
 {
 public:
-	BinaryTreeNode(char value, BinaryTreeNode* left = NULL, BinaryTreeNode* right = NULL)
+	BinaryTreeNode(T value, BinaryTreeNode* left = NULL, BinaryTreeNode* right = NULL)
 	{
 		_value = value;
 		_left = left;
@@ -21,13 +23,13 @@ public:
 	}
 
 private:
-	char _value;
+	T _value;
 
 	BinaryTreeNode* _left;
 	BinaryTreeNode* _right;
 
 public:
-	char GetValue()
+	T GetValue()
 	{
 		return _value;
 	}
@@ -40,5 +42,20 @@ public:
 	BinaryTreeNode* GetRight()
 	{
 		return _right;
+	}
+
+	void SetLeft(BinaryTreeNode* node)
+	{
+		_left = node;
+	}
+
+	void SetRight(BinaryTreeNode* node)
+	{
+		_right = node;
+	}
+
+	void SetValue(T value)
+	{
+		_value = value;
 	}
 };
