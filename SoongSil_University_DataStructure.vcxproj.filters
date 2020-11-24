@@ -135,6 +135,12 @@
     <ClInclude Include="Sources\Week11\Week11Manager.h">
       <Filter>Week11</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week11\BinarySearchTree\BinarySearchTree.h">
+      <Filter>Week11\BinarySearchTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week10\BinaryTree\BinaryTreeTraversalType.h">
+      <Filter>Week10\BinaryTree</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">

@@ -9,29 +9,29 @@ void Week10Manager::Main()
 
 void Week10Manager::BinaryTreeTest()
 {
-	BinaryTreeNode* g = new BinaryTreeNode('G');
-	BinaryTreeNode* h = new BinaryTreeNode('H');
+	BinaryTreeNode<char>* g = new BinaryTreeNode<char>('G');
+	BinaryTreeNode<char>* h = new BinaryTreeNode<char>('H');
 
-	BinaryTreeNode* d = new BinaryTreeNode('D');
-	BinaryTreeNode* e = new BinaryTreeNode('E', g, h);
-	BinaryTreeNode* f = new BinaryTreeNode('F');
+	BinaryTreeNode<char>* d = new BinaryTreeNode<char>('D');
+	BinaryTreeNode<char>* e = new BinaryTreeNode<char>('E', g, h);
+	BinaryTreeNode<char>* f = new BinaryTreeNode<char>('F');
 
-	BinaryTreeNode* b = new BinaryTreeNode('B', d);
-	BinaryTreeNode* c = new BinaryTreeNode('C', e, f);
+	BinaryTreeNode<char>* b = new BinaryTreeNode<char>('B', d);
+	BinaryTreeNode<char>* c = new BinaryTreeNode<char>('C', e, f);
 
-	BinaryTreeNode* a = new BinaryTreeNode('A', b, c);
+	BinaryTreeNode<char>* a = new BinaryTreeNode<char>('A', b, c);
 
-	BinaryTree* tree = new BinaryTree(a);
-
-	//
-	tree->ShowValueTraversal(BinaryTree::Preorder);
-	//tree->ShowValueTraversal(BinaryTree::Inorder);
-	//tree->ShowValueTraversal(BinaryTree::Postorder);
+	BinaryTree<char>* tree = new BinaryTree<char>(a);
 
 	//
-	int nodeCount = tree->GetAllNodeCount(BinaryTree::Preorder);
-	//int nodeCount = tree->GetAllNodeCount(BinaryTree::Inorder);
-	//int nodeCount = tree->GetAllNodeCount(BinaryTree::Postorder);
+	tree->ShowValueTraversal(Preorder);
+	//tree->ShowValueTraversal(Inorder);
+	//tree->ShowValueTraversal(Postorder);
+
+	//
+	int nodeCount = tree->GetAllNodeCount(Preorder);
+	//int nodeCount = tree->GetAllNodeCount(Inorder);
+	//int nodeCount = tree->GetAllNodeCount(Postorder);
 	cout << "Tree Node Count : " << nodeCount << endl;
 
 	//

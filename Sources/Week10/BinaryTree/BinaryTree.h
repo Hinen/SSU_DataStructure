@@ -1,10 +1,13 @@
 #pragma once
 #include "BinaryTreeNode.h"
+#include "BinaryTreeTraversalType.h"
+
+template<typename T>
 
 class BinaryTree
 {
 public:
-	BinaryTree(BinaryTreeNode* root)
+	BinaryTree(BinaryTreeNode<T>* root)
 	{
 		_root = root;
 	}
@@ -14,24 +17,16 @@ public:
 		delete _root;
 	}
 
-public:
-	enum TraversalType
-	{
-		Preorder,
-		Inorder,
-		Postorder
-	};
-
 private:
-	BinaryTreeNode* _root;
+	BinaryTreeNode<T>* _root;
 
 public:
-	void ShowValueTraversal(TraversalType type)
+	void ShowValueTraversal(BinaryTreeTraversalType type)
 	{
 		ShowValueTraversal(_root, 1, type);
 	}
 
-	int GetAllNodeCount(TraversalType type)
+	int GetAllNodeCount(BinaryTreeTraversalType type)
 	{
 		return GetAllNodeCountTraversal(_root, type);
 	}
@@ -47,7 +42,7 @@ public:
 	}
 
 private:
-	void ShowValueTraversal(BinaryTreeNode* node, int level, TraversalType type)
+	void ShowValueTraversal(BinaryTreeNode<T>* node, int level, BinaryTreeTraversalType type)
 	{
 		if (node == NULL)
 			return;
@@ -66,7 +61,7 @@ private:
 			cout << "Level " << level << " " << node->GetValue() << endl;
 	}
 
-	int GetAllNodeCountTraversal(BinaryTreeNode* node, TraversalType type)
+	int GetAllNodeCountTraversal(BinaryTreeNode<T>* node, BinaryTreeTraversalType type)
 	{
 		int count = 0;
 
@@ -89,7 +84,7 @@ private:
 		return count;
 	}
 
-	int GetTerminalNodeCount(BinaryTreeNode* node)
+	int GetTerminalNodeCount(BinaryTreeNode<T>* node)
 	{
 		if (node == NULL)
 			return 0;
@@ -100,7 +95,7 @@ private:
 		return GetTerminalNodeCount(node->GetLeft()) + GetTerminalNodeCount(node->GetRight());
 	}
 
-	int GetHeight(BinaryTreeNode* node)
+	int GetHeight(BinaryTreeNode<T>* node)
 	{
 		if (node == NULL)
 			return 0;
