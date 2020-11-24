@@ -53,4 +53,9 @@ public:
 	{
 		_right = node;
 	}
+
+	void SetValue(T value)
+	{
+		_value = value;
+	}
 };
