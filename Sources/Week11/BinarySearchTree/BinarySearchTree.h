@@ -8,15 +8,9 @@ template <typename T>
 class BinarySearchTree : public BinaryTree<T>
 {
 public:
-	BinarySearchTree() : BinaryTree<T>()
-	{
+	BinarySearchTree() : BinaryTree<T>() {}
 
-	}
-
-	~BinarySearchTree()
-	{
-
-	}
+	~BinarySearchTree() {}
 
 public:
 	void Insert(BinaryTreeNode<T>* insertNode)
