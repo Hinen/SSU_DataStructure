@@ -8,6 +8,11 @@ template<typename T>
 class BinaryTree
 {
 public:
+	BinaryTree()
+	{
+		_root = NULL;
+	}
+
 	BinaryTree(BinaryTreeNode<T>* root)
 	{
 		_root = root;
@@ -18,7 +23,7 @@ public:
 		delete _root;
 	}
 
-private:
+protected:
 	BinaryTreeNode<T>* _root;
 
 public:

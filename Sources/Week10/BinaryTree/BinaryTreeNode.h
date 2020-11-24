@@ -43,4 +43,14 @@ public:
 	{
 		return _right;
 	}
+
+	void SetLeft(BinaryTreeNode* node)
+	{
+		_left = node;
+	}
+
+	void SetRight(BinaryTreeNode* node)
+	{
+		_right = node;
+	}
 };
