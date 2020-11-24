@@ -12,5 +12,7 @@ void Week11Manager::BinarySearchTreeTest()
 	BinaryTreeNode<int>* a = new BinaryTreeNode<int>(5);
 	BinarySearchTree<int>* tree = new BinarySearchTree<int>(a);
 
+	tree->ShowValueTraversal(Postorder);
+
 	delete tree;
 }
