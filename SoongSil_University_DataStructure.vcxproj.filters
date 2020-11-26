@@ -55,6 +55,12 @@
     <Filter Include="Week11\BinarySearchTree">
       <UniqueIdentifier>{4ea2e125-958c-4d07-add1-f70470d72d6c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week12">
+      <UniqueIdentifier>{9729b0b6-06d9-4fbe-9f3f-8855eefb28d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Week12\Heap">
+      <UniqueIdentifier>{0671e798-fd3c-48cf-a81e-cfcf7b58df00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -141,6 +147,15 @@
     <ClInclude Include="Sources\Week10\BinaryTree\BinaryTreeTraversalType.h">
       <Filter>Week10\BinaryTree</Filter>
     </ClInclude>
+    <ClInclude Include="Sources\Week12\Week12Manager.h">
+      <Filter>Week12</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week12\Heap\HeapNode.h">
+      <Filter>Week12\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week12\Heap\MaxHeap.h">
+      <Filter>Week12\Heap</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\main.cpp">
@@ -175,6 +190,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week10\Week10Manager.cpp">
       <Filter>Week10</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week12\Week12Manager.cpp">
+      <Filter>Week12</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
