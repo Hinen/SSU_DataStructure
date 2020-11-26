@@ -9,3 +9,4 @@
 #include "Week9\Week9Manager.h"
 #include "Week10\Week10Manager.h"
 #include "Week11\Week11Manager.h"
+#include "Week12\Week12Manager.h"
