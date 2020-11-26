@@ -63,7 +63,7 @@ public:
 		_node[i].SetKey(key);
 	}
 
-	HeapNode remove()
+	HeapNode Remove()
 	{
 		if (IsEmpty())
 			return NULL;
