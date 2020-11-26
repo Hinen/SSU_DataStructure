@@ -2,6 +2,8 @@
 
 #include "../WeekManagerBase.h"
 #include "Heap\MaxHeap.h"
+#include <queue>
+#include <functional>
 
 class Week12Manager : public WeekManagerBase
 {
@@ -14,4 +16,7 @@ public:
 
 private:
 	void MaxHeapTest();
+	void PriorityQueueTest();
+	void HeapSortInc(int a[], int n);
+	void HeapSortDec(int a[], int n);
 };
