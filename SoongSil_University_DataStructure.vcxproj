@@ -30,6 +30,9 @@
     <ClInclude Include="Sources\Week12\Heap\HeapNode.h" />
     <ClInclude Include="Sources\Week12\Heap\MaxHeap.h" />
     <ClInclude Include="Sources\Week12\Week12Manager.h" />
+    <ClInclude Include="Sources\Week13\Graph\AdjMatGraph.h" />
+    <ClInclude Include="Sources\Week13\Graph\ConnectedComponentGraph.h" />
+    <ClInclude Include="Sources\Week13\Graph\SrchAMGraph.h" />
     <ClInclude Include="Sources\Week13\Week13Manager.h" />
     <ClInclude Include="Sources\Week1\Week1Manager.h" />
     <ClInclude Include="Sources\Week2\Polynomial.h" />

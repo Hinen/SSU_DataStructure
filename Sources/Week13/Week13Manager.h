@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../WeekManagerBase.h"
+#include "Graph\ConnectedComponentGraph.h"
 
 class Week13Manager : public WeekManagerBase
 {
@@ -10,4 +11,8 @@ public:
 
 public:
 	virtual void Main() override;
+
+private:
+	void GraphTest();
+	int FindBridge(ConnectedComponentGraph* g);
 };

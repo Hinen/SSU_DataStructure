@@ -64,6 +64,9 @@
     <Filter Include="Week13">
       <UniqueIdentifier>{fc05e194-7d5d-4d44-837f-636e5bd2d405}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Week13\Graph">
+      <UniqueIdentifier>{c4e047a5-0a99-4632-9459-c248d6a114ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
@@ -161,6 +164,15 @@
     </ClInclude>
     <ClInclude Include="Sources\Week13\Week13Manager.h">
       <Filter>Week13</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week13\Graph\AdjMatGraph.h">
+      <Filter>Week13\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week13\Graph\SrchAMGraph.h">
+      <Filter>Week13\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week13\Graph\ConnectedComponentGraph.h">
+      <Filter>Week13\Graph</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
