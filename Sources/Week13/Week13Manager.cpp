@@ -33,7 +33,7 @@ int Week13Manager::FindBridge(ConnectedComponentGraph* g)
 	int count = 0;
 	g->ResetVisited();
 
-	for (int i = 0; i < g->GetSize(); i++)
+	for (int i = 0; i < g->GetVertexCount(); i++)
 	{
 		for (int j = 0; j < i; j++)
 		{

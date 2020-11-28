@@ -16,7 +16,7 @@ protected:
 public:
 	void ResetVisited()
 	{
-		for (int i = 0; i < _size; i++)
+		for (int i = 0; i < _vertexCount; i++)
 			_visitedArr[i] = false;
 	}
 
@@ -25,7 +25,7 @@ public:
 		_visitedArr[v] = true;
 		cout << GetVertexName(v) << " ";
 
-		for (int u = 0; u < _size; u++)
+		for (int u = 0; u < _vertexCount; u++)
 		{
 			if (IsLinked(v, u) && _visitedArr[u] == false)
 				DepthFirstSearch(u);

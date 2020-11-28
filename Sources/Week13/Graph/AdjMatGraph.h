@@ -16,14 +16,14 @@ public:
 	~AdjMatGraph() { }
 
 protected:
-	int	_size;
+	int	_vertexCount;
 	char _verticeArr[MAX_VTXS];
 	int _adjMat[MAX_VTXS][MAX_VTXS];
 
 public:
-	int GetSize()
+	int GetVertexCount()
 	{
-		return _size;
+		return _vertexCount;
 	}
 
 	char GetVertexName(int idx)
@@ -44,8 +44,8 @@ public:
 			return;
 		}
 
-		_verticeArr[_size] = name;
-		_size++;
+		_verticeArr[_vertexCount] = name;
+		_vertexCount++;
 	}
 
 	void InsertEdge(int u, int v)
@@ -62,13 +62,13 @@ public:
 
 	void Display(FILE *fp = stdout)
 	{
-		fprintf(fp, "%d\n", _size);
+		fprintf(fp, "%d\n", _vertexCount);
 
-		for (int i = 0; i < _size; i++)
+		for (int i = 0; i < _vertexCount; i++)
 		{
 			fprintf(fp, "%c  ", GetVertexName(i));
 
-			for (int j = 0; j < _size; j++)
+			for (int j = 0; j < _vertexCount; j++)
 				fprintf(fp, " %3d", GetEdge(i, j));
 
 			fprintf(fp,"\n");
@@ -117,7 +117,7 @@ public:
 private:
 	void Reset()
 	{
-		_size = 0;
+		_vertexCount = 0;
 
 		for (int i = 0; i < MAX_VTXS; i++)
 		{
@@ -133,6 +133,6 @@ private:
 
 	bool IsFull()
 	{
-		return _size >= MAX_VTXS;
+		return _vertexCount >= MAX_VTXS;
 	}
 };

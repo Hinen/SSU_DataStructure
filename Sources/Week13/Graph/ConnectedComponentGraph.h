@@ -13,7 +13,7 @@ public:
 		_visitedArr[v] = true;
 		_vertexColorArr[v] = color;
 
-		for (int u = 0; u < _size; u++)
+		for (int u = 0; u < _vertexCount; u++)
 		{
 			if (IsLinked(v, u) && _visitedArr[u] == false)
 				DepthFirstSearch(u, color);
@@ -24,7 +24,7 @@ public:
 	{
 		int count = 0;
 
-		for (int i = 0; i < _size; i++)
+		for (int i = 0; i < _vertexCount; i++)
 		{
 			if (_visitedArr[i] == false)
 			{
@@ -35,11 +35,11 @@ public:
 		
 		cout << "그래프 연결 성분 개수 = " << count << endl;
 
-		for (int i = 0; i < _size; i++)
+		for (int i = 0; i < _vertexCount; i++)
 		{
 			cout << GetVertexName(i) << " = " << _vertexColorArr[i];
 			
-			if (i != _size - 1)
+			if (i != _vertexCount - 1)
 				cout << ", ";
 		}
 
