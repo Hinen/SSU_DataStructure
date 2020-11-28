@@ -37,13 +37,13 @@ public:
 
 		for (int i = 0; i < _vertexCount; i++)
 		{
-			cout << GetVertexName(i) << " = " << _vertexColorArr[i];
+			cout << GetVertexName(i) << " Color = " << _vertexColorArr[i];
 			
 			if (i != _vertexCount - 1)
 				cout << ", ";
 		}
 
-		cout << endl << endl;
+		cout << endl;
 
 		return count;
 	}

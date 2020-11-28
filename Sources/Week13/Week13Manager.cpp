@@ -43,16 +43,20 @@ int Week13Manager::FindBridge(ConnectedComponentGraph* g)
 		{
 			if (g->GetEdge(i, j) != 0)
 			{
+				cout << "임시로 끊어보는 간선 (" << g->GetVertexName(j) << " - " << g->GetVertexName(i) << ")" << endl;
+
 				g->RemoveEdge(i, j);
 				g->ResetVisited();
 
 				if (g->FindConnectedComponent() > 1)
 				{
-					cout << "Bridge " << count + 1 << " : " << g->GetVertexName(i) << " - " << g->GetVertexName(j) << endl;
+					cout << "Bridge " << count + 1 << " : " << g->GetVertexName(j) << " - " << g->GetVertexName(i) << endl;
 					count++;
 				}
 
 				g->InsertEdge(i, j);
+
+				cout << endl;
 			}
 		}
 	}
