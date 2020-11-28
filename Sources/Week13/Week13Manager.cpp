@@ -16,12 +16,16 @@ void Week13Manager::GraphTest()
 
 	ccGraph->InsertEdge(0, 1);
 	ccGraph->InsertEdge(0, 2);
-	ccGraph->InsertEdge(0, 3);
 	ccGraph->InsertEdge(1, 2);
+	ccGraph->InsertEdge(2, 3);
 
 	cout << "인접 행렬로 표현한 그래프" << endl;
 	ccGraph->Display();
 	cout << endl;
+
+	cout << "정점 D에서 부터 깊이 우선 탐색" << endl;
+	ccGraph->SrchAMGraph::DepthFirstSearch(ccGraph->GetVertexIdx('D'));
+	cout << endl << endl;
 
 	FindBridge(ccGraph);
 

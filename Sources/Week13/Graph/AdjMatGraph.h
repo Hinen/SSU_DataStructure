@@ -31,6 +31,17 @@ public:
 		return _verticeArr[idx];
 	}
 
+	int GetVertexIdx(char name)
+	{
+		for (int i = 0; i < _vertexCount; i++)
+		{
+			if (_verticeArr[i] == name)
+				return i;
+		}
+		
+		return -1;
+	}
+
 	int	GetEdge(int i, int j)
 	{
 		return _adjMat[i][j];
