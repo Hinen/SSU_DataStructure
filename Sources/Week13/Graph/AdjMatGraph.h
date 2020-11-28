@@ -36,32 +36,6 @@ public:
 		return _adjMat[i][j];
 	}
 
-	void SetEdge(int i, int j, int v)
-	{
-		_adjMat[i][j] = v;
-	}
-
-	bool IsEmpty()
-	{
-		return _size == 0;
-	}
-
-	bool IsFull()
-	{
-		return _size >= MAX_VTXS;
-	}
-
-	void Reset()
-	{
-		_size=0;
-
-		for (int i = 0; i < MAX_VTXS; i++)
-		{
-			for (int j = 0; j < MAX_VTXS; j++)
-				SetEdge(i, j, 0);
-		}
-	}
-
 	void InsertVertex(char name)
 	{
 		if (IsFull())
@@ -138,5 +112,27 @@ public:
 			Display(fp);
 			fclose(fp);
 		}
+	}
+
+private:
+	void Reset()
+	{
+		_size = 0;
+
+		for (int i = 0; i < MAX_VTXS; i++)
+		{
+			for (int j = 0; j < MAX_VTXS; j++)
+				SetEdge(i, j, 0);
+		}
+	}
+
+	void SetEdge(int i, int j, int v)
+	{
+		_adjMat[i][j] = v;
+	}
+
+	bool IsFull()
+	{
+		return _size >= MAX_VTXS;
 	}
 };
