@@ -46,7 +46,6 @@ int Week13Manager::FindBridge(ConnectedComponentGraph* g)
 				cout << "임시로 끊어보는 간선 (" << g->GetVertexName(j) << " - " << g->GetVertexName(i) << ")" << endl;
 
 				g->RemoveEdge(i, j);
-				g->ResetVisited();
 
 				if (g->FindConnectedComponent() > 1)
 				{
